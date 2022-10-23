@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.http import HttpResponse
+from django.shortcuts import render, reverse
 
 DATA = {
     'omlet': {
@@ -28,3 +29,24 @@ DATA = {
 #     'ингредиент2': количество2,
 #   }
 # }
+def multiply(dict_: dict, value: float) ->dict:
+    rezult = {}
+    for key, val in dict_.items():
+        rezult[key] = val * value
+    return rezult
+
+def recipes(request, dish):
+    persons = request.GET.get('persons', '1')
+    if persons.isdigit():
+        persons = int(persons)
+    else:
+        persons = 1
+    context = {}
+    context['dish'] = dish
+    context['persons'] = persons
+    if dish in DATA:
+        context['recipe'] = multiply(DATA[dish], persons)
+    else:
+        context['recipe'] = {}
+    return render(request, 'calculator/index.html', context)
+
