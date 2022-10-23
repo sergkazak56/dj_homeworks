@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Папки и файлы рабочей директории</title>
+</head>
+<body>
+    <h2>Папки и файлы рабочей директории {{ dir_path }}:</h2>
+    {% for item in dir_list %}
+        <h4>{{ item }}</h4>
+    {% endfor %}
+    <a href={% url 'home' %}><button>На главную</button></a>
+</body>
+</html>
