@@ -5,19 +5,25 @@
 {% block content %}
     <div class="container">
         <div class="header">
-            <h1><a href="/books">Каталог</a></h1>
+            <h2><a href="{% url 'books' %}">Каталог</a></h2>
         </div>
+
+        <div class="sort-block">
+            <span class="sort-item">Сортировать по:</span>
+            <a class="sort-item" href="?sort=name">названию</a>
+            <a class="sort-item" href="?sort=pub_date">дате публикации</a>
+        </div>
+        <p></p>
         <div class="row">
+            {% for book in books %}
             <div class="book col-md-4">
-                <h2>Сияние</h2>
-                <p>Автор: Стивен Кинг</p>
-                <p>Дата публикации: 2018-09-10</p>
+                <a href="{% url 'book' book.id %}">
+                    <h2 color="blue">{{ book.name }}</h2>
+                </a>
+                <p>Автор: {{ book.author }}</p>
+                <p>Дата публикации: <a href="{% url 'pubdate' book.pub_date %}" color="blue">{{ book.pub_date }}</a></p>
             </div>
-            <div class="book col-md-4">
-                <h2>1984</h2>
-                <p>Автор: Джордж Оруэл</p>
-                <p>Дата публикации: 2015-03-11</p>
-            </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

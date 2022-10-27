@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28294cf1-d02c-4a91-b341-ace0138aeec8" name="Changes" comment="" />
+    <list default="true" id="28294cf1-d02c-4a91-b341-ace0138aeec8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/books/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/books/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/books/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/books/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/books/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/books/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/fixtures/books.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/fixtures/books.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/main/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/main/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/templates/books/books_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.1-databases/models_list_displaying/templates/books/books_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.1-databases/work_with_database/templates/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.1-databases/work_with_database/templates/catalog.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +34,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "E:/DJANGO_projects/dj_homeworks/1.2-requests-templates/pagination",
+    "last_opened_file_path": "E:/DJANGO_projects/dj_homeworks/2.1-databases/models_list_displaying",
     "settings.editor.selected.configurable": "shared-indexes"
   }
 }]]></component>
@@ -37,5 +48,16 @@
       <updated>1666584334219</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

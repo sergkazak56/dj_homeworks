@@ -4,7 +4,7 @@
     "pk": 1,
     "fields": {
       "name": "Война и мир",
-      "author": "Ф.Д. Достоевский",
+      "author": "Л.Н. Толстой",
       "pub_date": "2018-02-27"
     }
   },
@@ -15,6 +15,78 @@
       "name": "1984",
       "author": "Джордж Оруэл",
       "pub_date": "2016-12-06"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "name": "Братья Карамазовы",
+      "author": "Ф.М. Достоевский",
+      "pub_date": "2018-02-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "name": "Скотный двор",
+      "author": "Джордж Оруэл",
+      "pub_date": "2018-01-12"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "name": "Война миров",
+      "author": "Герберт Уэллс",
+      "pub_date": "2018-05-27"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 6,
+    "fields": {
+      "name": "Идиот",
+      "author": "Ф.М. Достоевский",
+      "pub_date": "2019-03-14"
+    }
+  },
+    {
+    "model": "books.book",
+    "pk": 7,
+    "fields": {
+      "name": "Тарас Бульба",
+      "author": "Н.В. Гоголь",
+      "pub_date": "2019-08-25"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 8,
+    "fields": {
+      "name": "Кобзарь",
+      "author": "Т.Г. Шевченко",
+      "pub_date": "2019-08-26"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 9,
+    "fields": {
+      "name": "Дата Туташхиа",
+      "author": "Ч.И. Амирэджиби",
+      "pub_date": "2019-08-24"
+    }
+  },
+    {
+    "model": "books.book",
+    "pk": 10,
+    "fields": {
+      "name": "Анастасия",
+      "author": "В.Н. Мегре",
+      "pub_date": "2019-06-07"
     }
   }
 ]

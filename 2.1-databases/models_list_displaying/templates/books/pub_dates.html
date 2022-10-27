@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Опубликовано{% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="header">
+            <h5><a href="{% url 'books' %}">Вернуться в каталог</a></h5>
+        </div>
+        <div class="row">
+            <div class="book col-md-4">
+            {% for book in books %}
+                <a href="{% url 'book' book.id %}">
+                    <h2 color="blue">{{ book.name }}</h2>
+                </a>
+                <p>Автор: {{ book.author }}</p>
+                <p>Дата публикации: {{ book.pub_date }}</p>
+            {% endfor %}
+                {% if pages.has_previous %}
+                    <a href="{% url 'pubdate' prev %}">{{ prev }}←  </a>
+                {% endif %}
+                    <a href="" > {{ now }} </a>
+                {% if pages.has_next %}
+                    <a href="{% url 'pubdate' next %}">  →{{ next }}</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

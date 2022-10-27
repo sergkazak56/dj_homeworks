@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Книга{% endblock %}
+{% block content %}
+<div class="container" xmlns="http://www.w3.org/1999/html">
+        <div class="header">
+            <h5>
+              <a href="{% url 'books' %}">Вернуться в каталог</a>
+            </h5>
+            <div style="position:absolute; color:white;">
+                <img src="{% static 'img/title1.jpg' %}" style="width:120%;">
+                <div style="position:absolute; text-align:center; top:150px; left:90px; width:300px; height: 600px;">
+                    <h1 style="font-family:Times; font-size:60px">{{ book.name }}</h1>
+                    <p>Автор: {{ book.author }}</p>
+                    <p>Дата публикации: <a href="{% url 'pubdate' book.pub_date %}" style="color:yellow;">{{ book.pub_date }}</a></p>
+	            </div>
+            </div>
+        </div>
+   </div>
+{% endblock %}
